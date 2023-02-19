@@ -1,0 +1,81 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 5vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgb(202, 176, 176);
+    background: rgb(255, 255, 255);
+}
+
+#display { /*text box*/
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons {
+    display: grid; /*to display in a grid format*/
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*4 buttons in a row*/
+}
+
+.buttons > div {  /*borders of buttons*/
+    border-top: 1px solid #40d7d0;
+    border-right: 1px solid#48a9bb;
+}
+
+.button { 
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #2f2a2a;
+}
+
+#equal {
+    background-color: rgb(28, 174, 23);
+    color: white;
+}
+
+#del{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+#opr{
+    background-color: rgb(255, 157, 0);
+    color: white;
+}
+
+.button:hover {
+    background-color: #37bfd4;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#del:hover {
+    background-color: #ab0909;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#equal:hover {
+    background-color: #0a631a;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#opr:hover {
+    background-color: #b65616;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
